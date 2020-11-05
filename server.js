@@ -17,7 +17,6 @@ io.on('connection', socket => {
     })
 
     socket.on('join room', roomId => {
-        console.log("Join")
         if (rooms[roomId]) {
             socket.join(roomId);
             socket.roomId = roomId;
