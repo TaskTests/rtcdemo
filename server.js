@@ -9,7 +9,7 @@ const path = require('path');
 const rooms = {};
 
 io.on('connection', socket => {
-    // console.log(socket)
+    console.log(socket)
     console.log("New user")
     socket.on("create room", roomId => {
         socket.type = "host";
